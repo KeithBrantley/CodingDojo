@@ -1,8 +1,8 @@
 // 1. Get 1 to 255 - Write a function that returns an array with all the numbers from 1 to 255.
 
-function returnAnArray(){
+function returnAnArray() {
     var arr = [];
-    for(var i = 1; i <= 255; i++) {
+    for (var i = 1; i <= 255; i++) {
         console.log(i);
         arr.push(i);
     }
@@ -12,21 +12,27 @@ returnAnArray();
 
 // 2. Get even 1000 - Write a function that would get the sum of all the even numbers from 1 to 1000.  You may use a modulus operator for this exercise.
 
-function total(){
+function sumOfEvenNumbers() {
     var sum = 0;
-for(var i = 0; i <= 1000; i+=2){
-    sum = sum+i;
-    // console.log(x);
+    for (var i = 0; i <= 1000; i += 2) {
+        sum = sum + i;
+        // console.log(x);
     }
     return sum;
-} 
-total();
+}
+sumOfEvenNumbers();
 
 
 // 3. Sum odd 5000 - Write a function that returns the sum of all the odd numbers from 1 to 5000. (e.g. 1+3+5+...+4997+4999).
 
-
-
+function sumOfOddNumbers() {
+    var sum = 0;
+    for(var i = 1; i <= 5000; i+=2) {
+        sum = sum + i;
+    }
+    return sum;
+}
+sumOfOddNumbers();
 
 // 4. Iterate an array - Write a function that returns the sum of all the values within an array. (e.g. [1,2,5] returns 8. [-5,2,5,12] returns 14).
 
