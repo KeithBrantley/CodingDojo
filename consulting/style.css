@@ -1,0 +1,142 @@
+
+.container {
+    max-width: 908px;
+    margin: auto;
+}
+body {
+    /* background-color: darkblue; */
+    padding: 10px;
+}
+main {
+    background-color: rgb(11, 40, 73);
+    padding: 15px;
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+header h1 {
+    width: 340px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header ul {
+    width: 410px;
+    text-align: right;
+    display: inline-block;
+}
+
+header ul li {
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.main {
+    background-color: white;
+    padding: 15px;
+    /* width: 970px; */
+}
+
+/* BEGINNING OF MISSION */
+.mission {
+    background-color: rgb(90, 125, 241);
+    width: 29%;
+    margin: 2px;
+    margin-top: 10px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+.mission div {
+    text-align: top;
+}
+.mission img {
+    width: 15%;
+    display: inline-block;
+}
+.mission h3 {
+    padding: 0px;
+    color: white;
+    display: inline-block;
+}
+.mission p {
+    color: white;
+    font-size: 100%;
+}
+.mission a {
+    background: -webkit-linear-gradient( rgb(195, 214, 238), rgb(82, 132, 241));
+    /* background-color: blue; */
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* BEGINNING OF MISSION BOTTOM */
+.mission-bottom {
+    /* background-color: rgb(90, 125, 241); */
+    width: 29%;
+    margin: 2px;
+    margin-top: 10px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+}
+.mission-bottom div {
+    text-align: top;
+}
+.mission-bottom img {
+    width: 100%;
+}
+.mission-bottom h3 {
+    padding: 0px;
+    color: rgb(2, 0, 5);
+    WIDTH: 273PX;
+    FONT-SIZE: 17PX;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+.mission-bottom {
+    color: rgb(96, 52, 218); ;
+}
+.mission-bottom a {
+    text-align: center;
+    text-decoration: none;
+}
+
+blockquote {
+    display: block;
+}
+
+
+/* BEGINNIN OF FOOTER STYLES */
+
+
+footer {
+    margin-top: -15px;
+    height: 45px;
+    color: black;
+    background-color: white;
+}
+footer ul {
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 15px;
+    color: rgb(169, 194, 241);
+    text-decoration: none;
+}
