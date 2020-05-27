@@ -10,6 +10,7 @@ function returnAnArray() {
 }
 returnAnArray();
 
+
 // 2. Get even 1000 - Write a function that would get the sum of all the even numbers from 1 to 1000.  You may use a modulus operator for this exercise.
 
 function sumOfEvenNumbers() {
@@ -27,14 +28,24 @@ sumOfEvenNumbers();
 
 function sumOfOddNumbers() {
     var sum = 0;
-    for(var i = 1; i <= 5000; i+=2) {
+    for (var i = 1; i <= 5000; i += 2) {
         sum = sum + i;
     }
     return sum;
 }
 sumOfOddNumbers();
 
+
 // 4. Iterate an array - Write a function that returns the sum of all the values within an array. (e.g. [1,2,5] returns 8. [-5,2,5,12] returns 14).
+
+function sumOfArray(arr){
+    var sumOfArr = 0;
+    for(var i = 0; i < arr.length ; i++) {
+        sumOfArr += arr[i];
+    }
+    return sumOfArr;
+}
+sumOfArray([1,2,5]);
 
 
 // 5. Find max - Given an array with multiple values, write a function that returns the maximum number in the array. (e.g. for [-3,3,5,7] max is 7)
