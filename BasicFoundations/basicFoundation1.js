@@ -51,7 +51,7 @@ sumOfArray([1, 2, 5]);
 // 5. Find max - Given an array with multiple values, write a function that returns the maximum number in the array. (e.g. for [-3,3,5,7] max is 7)
 
 function arrMaxNum(arr) {
-    var max = Math.max.apply(null, arr)
+    var max = Math.max.apply(...arr)
     return max;
 }
 findMax([6, 7, 2, 4, 9]);
