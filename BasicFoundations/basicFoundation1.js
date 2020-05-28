@@ -71,8 +71,34 @@ sumOfArray([1,3,5,7,20]);
 
 // 7. Array odd - Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5, .... , 47,49]). Hint: Use 'push' method.
 
+function oddNumArray(arr){
+    var oddArray = [];
+    for(var i = 0; i <= arr.length; i++){
+        if( i%2 == 1) {
+            oddArray.push(i);
+        }
+    }
+    return oddArray;
+}
+
+oddNumArray([1,2,3,4,5,6,7,8,9,10]);
+
 
 // 8. Greater than Y - Given value of Y, write a function that takes an array and returns the number of values that are greater than Y. For example if arr = [1, 3, 5, 7] and Y = 3, your function will return 2. (There are two values in the array greater than 3, which are 5, 7).
+
+function greaterThanY(arr, y){
+    var y;
+    var numGreaterThan = [];
+    for( var i = 0; i <= arr.length; i++){
+        if(y < arr[i]) {
+            numGreaterThan.push(i);
+        }
+    }
+        return numGreaterThan;
+
+}
+
+greaterY([1,2,3], 4);
 
 
 // 9. Squares - Given an array with multiple values, write a function that replaces each value in the array with the value squared by itself. (e.g. [1,5,10,-2] will become [1,25,100,4])
