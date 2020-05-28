@@ -94,11 +94,11 @@ function greaterThanY(arr, y){
             numGreaterThan.push(i);
         }
     }
-        return numGreaterThan;
+        return numGreaterThan.length;
 
 }
 
-greaterY([1,2,3], 4);
+greaterThanY([5,8,7,10], 4);
 
 
 // 9. Squares - Given an array with multiple values, write a function that replaces each value in the array with the value squared by itself. (e.g. [1,5,10,-2] will become [1,25,100,4])
