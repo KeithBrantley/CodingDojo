@@ -161,7 +161,6 @@ function swapIndex(arr) {
     return newArr; 
 }
 
-
 swapIndex([1,5,10,-2]);
 
 
