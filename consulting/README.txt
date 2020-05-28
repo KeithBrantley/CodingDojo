@@ -1,1 +1,0 @@
-I LEARNED A LOT DOING THIS! I just wish I had more time, I had to research afew other tags ive never heard of to understand how to use them along with some attributes.I ran into a problem with linear gradients. I'm definetly going to brush up on those. I may have spent too much time on it. But overall im happy! Ha! Ha!
