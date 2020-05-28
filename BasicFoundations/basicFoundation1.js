@@ -103,19 +103,14 @@ greaterThanY([5,8,7,10], 6);
 
 // 9. Squares - Given an array with multiple values, write a function that replaces each value in the array with the value squared by itself. (e.g. [1,5,10,-2] will become [1,25,100,4])
 
-function 
-
-
-// function arrNumSquared(arr){
-//     var numSquared = [];
-//     for(var i = 0; i <= arr.length; i++) {
-//         arr[i] = arr[i]*i;
-//         numSquared.push(i);
-//     }
-//     return numSquared;
-// }
-
-// arrNumSquared([1,5,10,-2]);
+function squaredItself(arr){
+    var squaredIndex = [];
+    for(var i = 0; i <= arr.length; i++){
+        squaredIndex = arr.map(i => i * i);
+    }
+    return squaredIndex;
+}
+squaredItself([1,5,10,-2]);
 
 
 // 10. Negatives - Given an array with multiple values, write a function that replaces any negative numbers within the array with the value of 0. When the program is done the array should contain no negative values. (e.g. [1,5,10,-2] will become [1,5,10,0])
