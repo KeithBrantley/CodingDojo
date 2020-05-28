@@ -38,17 +38,23 @@ sumOfOddNumbers();
 
 // 4. Iterate an array - Write a function that returns the sum of all the values within an array. (e.g. [1,2,5] returns 8. [-5,2,5,12] returns 14).
 
-function sumOfArray(arr){
+function sumOfArray(arr) {
     var sumOfArr = 0;
-    for(var i = 0; i < arr.length ; i++) {
+    for (var i = 0; i < arr.length; i++) {
         sumOfArr += arr[i];
     }
     return sumOfArr;
 }
-sumOfArray([1,2,5]);
+sumOfArray([1, 2, 5]);
 
 
 // 5. Find max - Given an array with multiple values, write a function that returns the maximum number in the array. (e.g. for [-3,3,5,7] max is 7)
+
+function arrMaxNum(arr) {
+    var max = Math.max.apply(null, arr)
+    return max;
+}
+findMax([6, 7, 2, 4, 9]);
 
 
 // 6. Find average - Given an array with multiple values, write a function that returns the average of the values in the array. (e.g. for [1,3,5,7,20] average is 7.2)
