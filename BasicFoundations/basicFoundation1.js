@@ -152,14 +152,7 @@ function maxMinAvg(arr) {
 maxMinAvg([1, 5, 10, -2]);
 
 // 12. Swap Values - Write a function that will swap the first and last values of any given array. The default minimum length of the array is 2. (e.g. [1,5,10,-2] will become [-2,5,10,1]).
-// function swapValues(arr){
-//     for(var i = 0; i < arr.length; i++) {
-//         arr[0] = arr.length;
-//         arr.length = arr[0];
-//     }
-//     return arr;
-// }
-// swapValues([1,5,10,-2]);
+
 function swapIndex(arr) {
     var newArr = arr.slice();
     var temp = newArr[0];
@@ -168,29 +161,9 @@ function swapIndex(arr) {
     return newArr; 
 }
 
+
 swapIndex([1,5,10,-2]);
 
-// function swap(arr) {
-//     //your code here 
-//     var arrnew = arr.slice();
-//     var temp = arrnew[0];
-//     arrnew[0] = arrnew[arrnew.length-1];
-//     arrnew[arrnew.length-1] = temp;
-//     return arrnew; 
-// }
-
-// swapValues([1,5,10,-2]);
-
-
-// function swapValues(arr) {
-//     var newArr = arr.slice();
-//     var temp = newArr[0];
-//     newArr[0] = newArr[newArr.length-1];
-//     newArr[newArr.length-1] = temp;
-//     return newArr; 
-// }
-
-// swap([1,5,10,-2]);
 
 // 13. Number to String - Write a function that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example if array = [-1,-3,2], your function will return ['Dojo','Dojo',2].
 
