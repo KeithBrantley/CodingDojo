@@ -39,6 +39,17 @@ replaceNegNum([-1,3,5,-5]);
 
 // 10. Reverse Array - Given an array, write a function that reverses its values, in-place.  Example: reverse([3,1,6,4,2]) returns the same array, but now contains values reversed like so... [2,4,6,1,3].  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
 
+var arr = [3,1,6,4,2,5];
+
+function reverse(arr) {
+    for(var i = 0, j = arr.length-1; i < j; i++, j--) {
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+       
+reverse(arr);
+
 
 // 11. Outlook: Negative - Given an array, create and return a new one containing all the values of the original array, but make them all negative (not simply multiplied by -1). Given [1,-3,5], return [-1,-3,-5].
 
