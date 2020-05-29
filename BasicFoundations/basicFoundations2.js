@@ -21,6 +21,15 @@ replaceNegNum([-1,3,5,-5]);
 
 // 4. Double Vision - Given an array (similar to saying 'takes in an array'), create a function that returns a new array where each value in the original array has been doubled.  Calling double([1,2,3]) should return [2,4,6] without changing the original array.
 
+var arr =[1, 2, 3];
+function doubleValue(arr){
+    for(var i = 0; i < arr.length; i++){
+        arr[i] = arr[i] * 2;
+    }
+    return arr;
+}
+doubleValue(arr);
+
 
 // 5. Count Positives - Given an array of numbers, create a function to replace the last value with the number of positive values found in the array.  Example, countPositives([-1,1,1,1]) changes the original array to [-1,1,1,3] and returns it.
 
@@ -36,13 +45,22 @@ replaceNegNum([-1,3,5,-5]);
 
 // 9. Add Seven - Build a function that accepts an array. Return a new array with all the values of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) should return [8,9,10] in a new array.
 
+var arrplus7 = [1,2,3];
+function addSeven(arr){
+    for(var i = 0; i < arrplus7.length; i++){
+        arr[i] += 7;
+    }
+    return arr;
+}
+
+addSeven(arrplus7);
 
 // 10. Reverse Array - Given an array, write a function that reverses its values, in-place.  Example: reverse([3,1,6,4,2]) returns the same array, but now contains values reversed like so... [2,4,6,1,3].  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
 
 var arr = [3,1,6,4,2,5];
 
 function reverse(arr) {
-    for(var i = 0, j = arr.length-1; i < j; i++, j--) {
+    for(var i = 0; j = arr.length-1; i < j; i++, j--) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     return arr;
