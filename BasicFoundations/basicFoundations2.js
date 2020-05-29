@@ -1,5 +1,17 @@
 // 1. Biggie Size - Given an array, write a function that changes all positive numbers in the array to the string "big".  Example: makeItBig([-1,3,5,-5]) returns that same array, changed to [-1, "big", "big", -5].
 
+function replaceNegNum(arr) {
+    var negNum = arr.map(function(elem){
+        if (elem>0){
+            elem = "big";
+        }
+        return elem;
+    });
+    return negNum; 
+}
+
+replaceNegNum([-1,3,5,-5]);
+
 
 // 2. Print Low, Return High - Create a function that takes in an array of numbers.  The function should print the lowest value in the array, and return the highest value in the array.
 
