@@ -52,6 +52,13 @@ everyOther(arr);
 
 // 8. Previous Lengths - You are passed an array (similar to saying 'takes in an array' or 'given an array') containing strings.  Working within that same array, replace each string with a number - the length of the string at the previous array index - and return the array.  For example, previousLengths(["hello", "dojo", "awesome"]) should return ["hello", 5, 4]. Hint: Can for loops only go forward?
 
+// var arr = ["hello", "dojo", "awesome"];
+// function stringToNumber(arr){
+//     for(var i = arr.length; i < arr.length; i--){
+
+//     }
+// }
+
 
 // 9. Add Seven - Build a function that accepts an array. Return a new array with all the values of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) should return [8,9,10] in a new array.
 
@@ -81,6 +88,17 @@ reverse(arr);
 
 // 11. Outlook: Negative - Given an array, create and return a new one containing all the values of the original array, but make them all negative (not simply multiplied by -1). Given [1,-3,5], return [-1,-3,-5].
 
+var arr = [1,-3,5];
+function makeNegative(arr){
+    var newArr = [];
+    for(var i = 0; i < arr.length; i++){
+        if(i < 0){
+            newArr = i * -1
+        }
+    }
+    return newArr;
+}
+makeNegative([1,-3,5]);
 
 // 12. Always Hungry - Create a function that accepts an array, and prints "yummy" each time one of the values is equal to "food".  If no array values are "food", then print "I'm hungry" once.
 
