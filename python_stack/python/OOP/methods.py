@@ -6,3 +6,4 @@ class User:
 
     def make_deposit(self, amount):
         self.account_balance += amount
+
