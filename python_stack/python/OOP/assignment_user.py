@@ -5,6 +5,7 @@ class User:
 
     def make_deposits(self, amount):
         self.account_balance += amount
+        return self
 
     def make_withdrawal(self, amount):
         self.account_balance -= amount
@@ -22,20 +23,20 @@ Elena = User("Elena", 0)
 Bethany = User("Bethany", 0)
 Tito = User("Tito", 0)
 
-Elena.make_deposits(100)
-Elena.make_deposits(100)
-Elena.make_deposits(100)
-Elena.make_withdrawal(20)
-Elena.display_user_balance()
+Elena.make_deposits(100).make_deposits(100).make_deposits(100).make_withdrawal(20).display_user_balance()
+# Elena.make_deposits(100)
+# Elena.make_deposits(100)
+# Elena.make_withdrawal(20)
+# Elena.display_user_balance()
 
-Bethany.make_deposits(100)
-Bethany.make_deposits(100)
-Bethany.make_withdrawal(20)
-Bethany.make_withdrawal(20)
-Bethany.display_user_balance()
+Bethany.make_deposits(100).make_deposits(100).make_withdrawal(20).make_withdrawal(20).display_user_balance()
+# Bethany.make_deposits(100)
+# Bethany.make_withdrawal(20)
+# Bethany.make_withdrawal(20)
+# Bethany.display_user_balance()
 
-Tito.make_deposits(100)
-Tito.make_withdrawal(20)
-Tito.make_withdrawal(20)
-Tito.make_withdrawal(20)
-Tito.display_user_balance()
+Tito.make_deposits(100).make_withdrawal(20).make_withdrawal(20).make_withdrawal(20).display_user_balance()
+# Tito.make_withdrawal(20)
+# Tito.make_withdrawal(20)
+# Tito.make_withdrawal(20)
+# Tito.display_user_balance()
