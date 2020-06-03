@@ -12,7 +12,7 @@ class User:
         return self
 
     def display_user_balance(self):
-        print(self.name +"'s" + " balance is "+ "$" + str(self.account_balance))
+        print(self.name +"'s balance is "+ "$" + str(self.account_balance))
         return self
 
     def transfer_money(self, other_user, amount):
