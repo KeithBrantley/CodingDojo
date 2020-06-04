@@ -16,7 +16,7 @@ class BankAccount:
         return self
 
     def display_account_info(self):
-        print(self.name + " Balance is " + "$" + str(self.balance))
+        print(self.name + " Balance is " + "$" + str(self.balance)) 
         return self
 
     def yield_interest(self):

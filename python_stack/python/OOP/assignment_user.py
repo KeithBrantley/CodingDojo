@@ -1,7 +1,32 @@
+class BankAccount:
+    def __init__(self, Int_rate = 0.02, Balance = 0):
+        self.int_rate = Int_rate
+        self.balance = Balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        return self
+
+    def withdrawal(self, amount):
+        self.balance -= amount
+        if(self.balance <= 0):
+            print("Insufficiant funds: Charging a $5 fee.")
+            self.balance = self.balance - 5
+        return self
+
+    def display_account_info(self):
+        print(self.balance) 
+        return self
+
+    def yield_interest(self):
+        self.balance += self.balance * self.int_rate
+        return self
+
 class User:
-    def __init__(self, Name, Account_Balance):
+    def __init__(self, Name, Email):
         self.name = Name
-        self.account_balance = Account_Balance
+        self.email = Email
+        self.account_balance = BankAccount(Int_rate = 0.02, Balance = 0)
 
     def make_deposits(self, amount):
         self.account_balance += amount
@@ -19,24 +44,12 @@ class User:
         pass
         return self
 
-Elena = User("Elena", 0)
-Bethany = User("Bethany", 0)
-Tito = User("Tito", 0)
+Elena = User("Elena", "elena@email")
+Bethany = User("Bethany", "bethany@email")
+Tito = User("Tito", "tito@email")
 
 Elena.make_deposits(100).make_deposits(100).make_deposits(100).make_withdrawal(20).display_user_balance()
-# Elena.make_deposits(100)
-# Elena.make_deposits(100)
-# Elena.make_withdrawal(20)
-# Elena.display_user_balance()
 
 Bethany.make_deposits(100).make_deposits(100).make_withdrawal(20).make_withdrawal(20).display_user_balance()
-# Bethany.make_deposits(100)
-# Bethany.make_withdrawal(20)
-# Bethany.make_withdrawal(20)
-# Bethany.display_user_balance()
 
 Tito.make_deposits(100).make_withdrawal(20).make_withdrawal(20).make_withdrawal(20).display_user_balance()
-# Tito.make_withdrawal(20)
-# Tito.make_withdrawal(20)
-# Tito.make_withdrawal(20)
-# Tito.display_user_balance()
