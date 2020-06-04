@@ -9,14 +9,14 @@ class BankAccount:
         return self
 
     def withdrawal(self, amount):
-        self.balance -= amount
-        if(self.balance <= 0):
+        # self.balance -= amount
+        if(self.balance <= amount):
             print("Insufficiant funds: Charging a $5 fee.")
             self.balance = self.balance - 5
         return self
 
     def display_account_info(self):
-        print(self.name + " Balance is " + "$" + str(self.balance)) 
+        print(self.name + " Balance is " + "$" + str(self.balance))
         return self
 
     def yield_interest(self):
@@ -29,7 +29,7 @@ second_account = BankAccount("Savings")
 
 first_account.deposit(50).deposit(70).deposit(300).withdrawal(200).yield_interest().display_account_info()
 
-second_account.deposit(100).deposit(100).withdrawal(50).withdrawal(60).withdrawal(80).withdrawal(98).yield_interest().display_account_info()
+second_account.deposit(100).deposit(100).withdrawal(50).withdrawal(60).withdrawal(600).withdrawal(98).yield_interest().display_account_info()
 
 
 
